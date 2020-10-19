@@ -1,0 +1,66 @@
+//colors
+$light-black: #101010;
+$red: #e51b19;
+$blood: #bf0432;
+$grey: #999999;
+$white-grey: #f1f1f1;
+$strong-grey: #bfc1c4;
+$whisper: #eeeeee;
+$light-grey: #a0a0a0;
+$white: #ffffff;
+
+//path
+$img: "../img/";
+
+//media
+$media-tablet: 1200px;
+$media-big-tablet: 1000px;
+$media-small-tablet: 900px;
+$media-mobile: 768px;
+$media-big-mobile: 600px;
+$media-small-mobile: 500px;
+
+//colors
+
+//text
+$c-primary-text: $light-black;
+$c-grey-text: $grey;
+$c-red-text: $red;
+$c-white-text: $white;
+$c-info-text: $light-grey;
+//bg
+$c-footer-bg: $strong-grey;
+$c-red-bg: $red;
+$c-secondary-red: $blood;
+$c-white-bg: $white;
+$c-feature-bg: $whisper;
+$c-black-bg: $light-black;
+$c-grey-background: $white-grey;
+//borders
+$c-white-border: $white;
+$c-border: $white-grey;
+
+//weights
+$f-light: 300;
+$f-regular: 400;
+$f-medium: 500;
+$f-bold: 600;
+
+//font-sizes
+$f-tooltip: 10px;
+$f-info: 12px;
+$f-casual: 14px;
+$f-text: 16px;
+$f-big: 18px;
+$f-subtitle: 20px;
+$f-title: 30px;
+
+//border-radius
+$border-radius: 20px;
+$border-radius-big: 40px;
+
+//gutters
+$step: 8px;
+$step-small: 4px;
+$step-regular: 16px;
+$step-big: 24px;

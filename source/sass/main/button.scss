@@ -1,0 +1,37 @@
+.button {
+  position: relative;
+  display: block;
+  min-height: 47px;
+  padding: 14px $step-big + $step;
+  border: 2px solid transparent;
+  background-color: $c-red-bg;
+  font-size: inherit;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $c-white-text;
+  transition: color 0.2s ease, background 0.2s ease, border 0.2s ease;
+
+  &:hover, &:focus {
+    color: $c-red-text;
+    background-color: $white;
+    border: 2px solid $c-red-bg;
+  }
+
+  @media (max-width: $media-small-mobile) {
+    width: 100%;
+  }
+
+  &--white {
+    border: 2px solid $c-border;
+    background-color: $white;
+    text-transform: none;
+    color: black;
+
+    &:hover, &:focus {
+      color: black;
+      background-color: $c-border;
+      border: 2px solid $c-border;
+    }
+  }
+}
