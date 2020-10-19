@@ -1,0 +1,12 @@
+- var conditions = [{text: 'Выбери кухонную машину, положи её в корзину', icon: 'choose'}, {text: 'Добавь насадки', icon: 'add'}, {text: 'Стоимость пересчитается автоматически', icon: 'cost'}]
+
+mixin conditions()
+    section.conditions
+        .conditions__wrapper
+            h2.conditions__title
+                | Как получить подарок
+            ul.conditions__list
+                each condition in conditions
+                    li.conditions__item
+                        p.conditions__text=condition.text
+                        img.conditions__image(src=condition.icon)
