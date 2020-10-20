@@ -1,20 +1,6 @@
-.page-layout {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-.page-content {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  padding-top: $step;
-}
-
 .container {
   width: 100%;
   max-width: 1200px;
-  padding: 0 $step-regular;
+  padding: 0 25px;
   margin: 0 auto;
 }

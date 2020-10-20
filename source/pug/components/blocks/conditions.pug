@@ -6,7 +6,8 @@ mixin conditions()
             h2.conditions__title
                 | Как получить подарок
             ul.conditions__list
-                each condition in conditions
+                each condition, index in conditions
                     li.conditions__item
+                        p.conditions__counter=index + 1
                         p.conditions__text=condition.text
                         img.conditions__image(src=condition.icon)

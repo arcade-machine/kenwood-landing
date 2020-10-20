@@ -6,8 +6,11 @@ html(lang='ru')
 
     body
         .page-layout
-
-            main.page-content
-                .container
+            main
+                +top
+                +category
+                +promo
+                +features
+                +conditions
 
         script(src=js + "main.js")

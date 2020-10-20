@@ -1,4 +1,4 @@
-- var categoryItems = ['Кухонные машины', 'Насадки для куханных машин', 'Колекция kMix', 'Насадки для kMix', 'Блендеры',]
+- var categoryItems = [{text: 'Кухонные <b>машины</b>', icon: 'machine'},{text: 'Насадки для <b>кухонных машин</b>', icon: 'cap'},{text: 'Коллекция <b>kMix</b>', icon: 'kmix-collection'},{text: 'Насадки для <b>kMix</b>', icon: 'kmix-cap'},{text: '<b>Блендеры</b>', icon: 'blenders'}]
 
 mixin category()
     section.category
@@ -6,6 +6,8 @@ mixin category()
             h2.category__title
                 | Категории
             ul.category__list
-                each category in categoryItems
-                    li.category__item
-                        p.category__text= category
+                each category, index in categoryItems
+                    li.category__item(class='category__item--' + index)
+                        .category__image-box
+                            img.category__image(src=img + category.icon)
+                        p.category__text!= category.text

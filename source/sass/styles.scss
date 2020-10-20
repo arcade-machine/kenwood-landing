@@ -9,9 +9,10 @@
 
 //libs
 
-
 //sections
-
+@import "page/section/top";
 
 //blocks
-
+@import "page/block/category";
+@import "page/block/promo";
+@import "page/block/conditions";
