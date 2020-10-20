@@ -1,0 +1,31 @@
+.info {
+  &__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #b6bc00;
+  }
+
+  &__title {
+    padding: 0 25px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    color: #ffffff;
+    font-style: italic;
+
+    b {
+      font-style: normal;
+    }
+  }
+
+  &__image-box {
+    min-height: 400px;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    padding: 0 25px;
+    font-size: 16px;
+    line-height: 27px;
+    color: #ffffff;
+  }
+}

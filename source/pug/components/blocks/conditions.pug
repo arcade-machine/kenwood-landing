@@ -1,13 +1,13 @@
-- var conditions = [{text: 'Выбери кухонную машину, положи её в корзину', icon: 'choose'}, {text: 'Добавь насадки', icon: 'add'}, {text: 'Стоимость пересчитается автоматически', icon: 'cost'}]
+- var conditions = [{text: 'Выбери <b>кухонную машину</b>, положи её в корзину', icon: 'choose'}, {text: 'Добавь <b>насадки</b>', icon: 'add'}, {text: 'Стоимость пересчитается автоматически', icon: 'cost'}]
 
 mixin conditions()
     section.conditions
-        .conditions__wrapper
+        .conditions__container.container
             h2.conditions__title
                 | Как получить подарок
             ul.conditions__list
                 each condition, index in conditions
-                    li.conditions__item
+                    li.conditions__item(class='conditions__item--' + index)
                         p.conditions__counter=index + 1
-                        p.conditions__text=condition.text
+                        p.conditions__text!=condition.text
                         img.conditions__image(src=condition.icon)
