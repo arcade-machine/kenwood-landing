@@ -3,7 +3,7 @@
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/merriweather-light-webfont.woff2") format("woff2"), url("../../fonts/merriweather-light-webfont.woff") format("woff");
+  src: url("../fonts/merriweather-light-webfont.woff2") format("woff2"), url("../fonts/merriweather-light-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-weight: 300;
   font-style: italic;
   font-display: swap;
-  src: url("../../fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-lightitalic-webfont.woff") format("woff");
+  src: url("../fonts/merriweather-lightitalic-webfont.woff2") format("woff2"), url("../fonts/merriweather-lightitalic-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/merriweather-regular-webfont.woff2") format("woff2"), url("../../fonts/merriweather-regular-webfont.woff") format("woff");
+  src: url("../fonts/merriweather-regular-webfont.woff2") format("woff2"), url("../fonts/merriweather-regular-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   font-weight: 400;
   font-style: italic;
   font-display: swap;
-  src: url("../../fonts/merriweather-italic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-italic-webfont.woff") format("woff");
+  src: url("../fonts/merriweather-italic-webfont.woff2") format("woff2"), url("../fonts/merriweather-italic-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -35,7 +35,7 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../../fonts/merriweather-bold-webfont.woff") format("woff");
+  src: url("../fonts/merriweather-bold-webfont.woff2") format("woff2"), url("../fonts/merriweather-bold-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -43,7 +43,7 @@
   font-weight: 700;
   font-style: italic;
   font-display: swap;
-  src: url("../../fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-bolditalic-webfont.woff") format("woff");
+  src: url("../fonts/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../fonts/merriweather-bolditalic-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -51,7 +51,7 @@
   font-weight: 900;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/merriweather-black-webfont.woff2") format("woff2"), url("../../fonts/merriweather-black-webfont.woff") format("woff");
+  src: url("../fonts/merriweather-black-webfont.woff2") format("woff2"), url("../fonts/merriweather-black-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -59,7 +59,7 @@
   font-weight: 900;
   font-style: italic;
   font-display: swap;
-  src: url("../../fonts/merriweather-blackitalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather-blackitalic-webfont.woff") format("woff");
+  src: url("../fonts/merriweather-blackitalic-webfont.woff2") format("woff2"), url("../fonts/merriweather-blackitalic-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -67,7 +67,7 @@
   font-weight: 200;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/montserrat-extralight-webfont.woff2") format("woff2"), url("../../fonts/montserrat-extralight-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-extralight-webfont.woff2") format("woff2"), url("../fonts/montserrat-extralight-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -75,7 +75,7 @@
   font-weight: 200;
   font-style: italic;
   font-display: swap;
-  src: url("../../fonts/montserrat-extralightitalic-webfont.woff2") format("woff2"), url("../../fonts/montserrat-extralightitalic-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-extralightitalic-webfont.woff2") format("woff2"), url("../fonts/montserrat-extralightitalic-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -83,7 +83,7 @@
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../../fonts/montserrat-light-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -91,7 +91,15 @@
   font-weight: 300;
   font-style: italic;
   font-display: swap;
-  src: url("../../fonts/montserrat-lightitalic-webfont.woff2") format("woff2"), url("../../fonts/montserrat-lightitalic-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-lightitalic-webfont.woff2") format("woff2"), url("../fonts/montserrat-lightitalic-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff2") format("woff");
 }
 
 @font-face {
@@ -99,7 +107,7 @@
   font-weight: 400;
   font-style: italic;
   font-display: swap;
-  src: url("../../fonts/montserrat-italic-webfont.woff2") format("woff2"), url("../../fonts/montserrat-italic-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-italic-webfont.woff2") format("woff2"), url("../fonts/montserrat-italic-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -107,7 +115,15 @@
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/montserrat-medium-webfont.woff2") format("woff2"), url("../../fonts/montserrat-medium-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-medium-webfont.woff2") format("woff2"), url("../fonts/montserrat-medium-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/montserrat-mediumitalic-webfont.woff2") format("woff2"), url("../fonts/montserrat-mediumitalic-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -115,7 +131,7 @@
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../../fonts/montserrat-bold-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -123,7 +139,7 @@
   font-weight: 600;
   font-style: italic;
   font-display: swap;
-  src: url("../../fonts/montserrat-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/montserrat-bolditalic-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-bolditalic-webfont.woff2") format("woff2"), url("../fonts/montserrat-bolditalic-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -131,7 +147,7 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/montserrat-extrabold-webfont.woff2") format("woff2"), url("../../fonts/montserrat-extrabold-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-extrabold-webfont.woff2") format("woff2"), url("../fonts/montserrat-extrabold-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -139,7 +155,7 @@
   font-weight: 700;
   font-style: italic;
   font-display: swap;
-  src: url("../../fonts/montserrat-extrabolditalic-webfont.woff2") format("woff2"), url("../../fonts/montserrat-extrabolditalic-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-extrabolditalic-webfont.woff2") format("woff2"), url("../fonts/montserrat-extrabolditalic-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -147,7 +163,7 @@
   font-weight: 800;
   font-style: normal;
   font-display: swap;
-  src: url("../../fonts/montserrat-black-webfont.woff2") format("woff2"), url("../../fonts/montserrat-black-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-black-webfont.woff2") format("woff2"), url("../fonts/montserrat-black-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -155,5 +171,5 @@
   font-weight: 800;
   font-style: italic;
   font-display: swap;
-  src: url("../../fonts/montserrat-blackitalic-webfont.woff2") format("woff2"), url("../../fonts/montserrat-blackitalic-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-blackitalic-webfont.woff2") format("woff2"), url("../fonts/montserrat-blackitalic-webfont.woff") format("woff");
 }
