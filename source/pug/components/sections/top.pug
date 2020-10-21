@@ -9,14 +9,14 @@ mixin top()
                     | ENWOOD
                 h2.top__subtitle
                     | Твои кулинарные
-                h2.top__subtitle.red-text
+                h2.top__subtitle.top__subtitle--red.red-text
                     | шедевры
                 .top__signature-box
-                    img.top__signature
+                    img.top__signature(src=img + 'signature.png')
             .top__discription-box
-                p.top__text
-                    | Любые 3 насадки в подарок!
-                p.top__text
-                    | Получи выгоду до 30 000 ₽!
+                p.top__text.top__text--top
+                    | Любые 3 насадки <span class='red-text'>в подарок!</span>
+                p.top__text.top__text--middle
+                    | <span class='red-text'>Получи выгоду до</span> 30 000 ₽!
                 a.top__link
                     | Получить

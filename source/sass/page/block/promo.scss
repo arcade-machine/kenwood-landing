@@ -4,6 +4,7 @@
 
   &__wrapper {
     padding: 0 25px;
+    margin-bottom: 20px;
   }
 
   &__title {
@@ -25,6 +26,12 @@
   &__middle-box {
     position: relative;
     min-height: 375px;
+    margin-bottom: 20px;
+
+    background-image: url("../img/promo-mobile.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &::before {
       content: '';
@@ -40,11 +47,26 @@
   }
 
   &__text {
+    font-family: "Montserrat", sans-serif;
     font-size: 20px;
     color: #1e1e1e;
   }
 
   &__bottom-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 285px;
+
+    background-image: url("../img/promo-bottom.png");
+    background-position: left center;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+
+  &__bottom-image {
+    &--second {
+      align-self: flex-start;
+    }
   }
 }

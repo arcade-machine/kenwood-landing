@@ -10,6 +10,7 @@
     margin-bottom: 25px;
     font-size: 30px;
     color: #ffffff;
+    font-weight: 300;
     font-style: italic;
 
     b {
@@ -20,12 +21,18 @@
   &__image-box {
     min-height: 400px;
     margin-bottom: 25px;
+
+    background-image: url("../img/info.png");
+    background-position: right center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
   }
 
   &__text {
     padding: 0 25px;
     font-size: 16px;
     line-height: 27px;
+    font-family: "Montserrat", sans-serif;
     color: #ffffff;
   }
 }

@@ -3,9 +3,48 @@ mixin actions()
         .actions__wrapper
             h2.actions__title
                 | Выберите кухонную машину
-            .actions__list
+            ul.actions__list
+                - var n = 0;
+                    while n < 1
+                        li.actions__item
+                            .actions__image-box
+                                img.actions__image(src=img + 'machine.png')
+                            .actions__content-box
+                                .actions__label-list
+                                    span.actions__label.actions__label--new
+                                        | Новинка
+                                    span.actions__label.actions__label--gift
+                                        | +1 насадка
+                                h3.actions__name
+                                    | Комбайн Kenwood
+                                p.actions__copyright
+                                    | kenwood
+                            .actions__price-box
+                                p.actions__price
+                                    | 84 990 ₽
+                                a.actions__cart-link(href="#")
+                                    | В корзину
+                        - n++
 
             h2.actions__title
                 | Выберите три любые насадки
-            .actions__list
+            ul.actions__list
+                - var a = 0;
+                    while a < 1
+                        li.actions__item
+                            .actions__image-box
+                                img.actions__image(src=img + 'machine.png')
+                            .actions__content-box
+                                h3.actions__name
+                                    | Насадка для приготовления Kenwood
+                                p.actions__copyright
+                                    | kenwood
+                            .actions__price-box
+                                p.actions__price
+                                    | 4 990 ₽
+                                a.actions__cart-link(href="#")
+                                    | В корзину
+                        - a++
+
+
 
