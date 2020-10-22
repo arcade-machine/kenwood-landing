@@ -1,0 +1,94 @@
+.features {
+  @media (min-width: 1024px) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__wrapper {
+    overflow: hidden;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    padding: 0 20px;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1e1e1e;
+  }
+
+  &__table {
+    display: flex;
+  }
+
+  &__cell {
+    padding: 14px;
+    min-height: 50px;
+
+    &--checkbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #A0A0A0;
+    text-align: center;
+  }
+
+  &__feature {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__checkbox {
+    width: 23px;
+    height: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--green {
+      background-image: url("../img/icons/checkbox-green.svg");
+    }
+
+    &--red {
+      background-image: url("../img/icons/checkbox-red.svg");
+    }
+  }
+
+  &__mark {
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../img/icons/mark.svg");
+  }
+
+  &__column {
+    width: 20%;
+
+    &--title {
+      width: 31%;
+
+      .features__cell {
+        position: relative;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: -50vw;
+          width: 150vw;
+          height: 1px;
+          background-color: #A0A0A0;
+        }
+      }
+    }
+  }
+}

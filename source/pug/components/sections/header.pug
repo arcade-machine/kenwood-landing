@@ -1,0 +1,29 @@
+- var navigationLinks = ['Кухонные машины', 'Насадки для кухонных машин', 'Коллекция kMix', 'Насадки для kMix', 'Блендеры']
+
+mixin header()
+    header.header
+        .header__container
+            .header__top
+                .header__logo-box
+                    .header__logo
+                .header__phone-box
+                    .header__phone-icon-box
+                        .header__phone-icon
+                    .header__phone-content
+                        p.header__phone-text
+                            | Бесплатно по России
+                        a.header__phone(href="tel:88006002798")
+                            | 8 800 600 27 98
+                    .header__actions
+                        a.header__registration(href="#")
+                            | Регистрация
+                        a.header__login(href="#")
+                            | Войти
+                        a.header__cart(href="#")
+                            | Войти
+            ul.header__navigation
+                each link in navigationLinks
+                    li.header__navigation-item
+                        a.header__navigation-link(href='#')= link
+
+

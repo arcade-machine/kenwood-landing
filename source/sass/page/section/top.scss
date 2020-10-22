@@ -1,6 +1,10 @@
 .top {
   background-color: #f7f7f7;
 
+  @media (min-width: 768px) {
+    background-color: transparent;
+  }
+
   &__container {
     padding-top: 20px;
     padding-bottom: 40px;

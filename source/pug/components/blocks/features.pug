@@ -1,33 +1,29 @@
-- var featureTable = [{text: 'Смешивание, взбивание', isCombine: true, isMachine: true}, {text: 'Замес тугого теста', isCombine: false, isMachine: true}, {text: 'Изготовление домашней пасты', isCombine: false, isMachine: true}, {text: 'Приготовление супов пюре и смузи', isCombine: false, isMachine: true}, {text: 'Изготовление фарша из жесткого мяса', isCombine: true, isMachine: true}, {text: 'Приготовление мороженого', isCombine: false, isMachine: true}, {text: 'Просеивание и протирание', isCombine: false, isMachine: true}, {text: 'Нарезка', isCombine: true, isMachine: true}]
+- var featureTableColumns = [{device: 'Ручной миксер', features: [true, false, false, false, false, false, false, false]}, {device: 'Мясорубка/овощерезка', features: [false, false, false, false, true, false, false, true]}, {device: 'Кухонный комбайн', features: [true, false, false, false, true, false, false, true]}, {device: 'Кухонная машина', features: [true, true, true, true, true, true, true, true]}]
+- var featureTableFeatures = ['', 'Смешивание, взбивание', 'Замес тугого теста', 'Изготовление домашней пасты', 'Приготовление супов пюре и смузи', 'Изготовление фарша из жесткого мяса', 'Приготовление мороженого', 'Просеивание и протирание', 'Нарезка']
 
 mixin features()
     section.features
         .features__wrapper
             h2.features__title
                 | На что способна кухонная машина
-            .feature__table
-                .features__row
+            .features__table
+                .features__column.features__column--title
+                    each cell in featureTableFeatures
+                        .features__cell
+                            p.features__feature=cell
+
+                each column in featureTableColumns
                     .features__column
-                    .features__column
-                        p.features__header
-                            | Кухонный комбаин
-                    .features__column
-                        p.features__header
-                            | Кухонная машина
-                each row in featureTable
-                    .features__row
-                        .features__column
-                            p.features__text=row.text
-                        .features__column
-                            if row.isCombine
-                                .features__checkbox.features__checkbox--green
-                            else
-                                .features__mark
-                        .features__column
-                            if row.isMachine
-                                .features__checkbox.features__checkbox--red
-                            else
-                                .features__mark
-            .feature__bottom-box
+                        .features__cell
+                            p.features__text=column.device
+                        each feature in column.features
+                            .features__cell.features__cell--checkbox
+                                if feature
+                                    .features__checkbox(class= column.device === 'Кухонная машина'? 'features__checkbox--red': 'features__checkbox--green')
+
+                                else
+                                    .features__mark
+
+            .features__bottom-box
 
 
