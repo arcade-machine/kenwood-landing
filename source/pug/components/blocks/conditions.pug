@@ -8,6 +8,6 @@ mixin conditions()
             ul.conditions__list
                 each condition, index in conditions
                     li.conditions__item(class='conditions__item--' + index)
-                        p.conditions__counter=index + 1
                         img.conditions__image(src=img + condition.icon + '.png')
+                        p.conditions__counter=index + 1
                         p.conditions__text!=condition.text

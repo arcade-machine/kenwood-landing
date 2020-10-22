@@ -2,6 +2,11 @@
   padding: 40px 0;
   overflow: hidden;
 
+  @media (min-width: 1024px) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   &__wrapper {
     padding: 0 25px;
     margin-bottom: 20px;
@@ -44,6 +49,13 @@
       background-color: #b6bc00;
       transform: rotate(45deg);
     }
+
+    @media (min-width: 1024px) {
+      min-height: 535px;
+      margin-bottom: 40px;
+      background-image: url("../img/promo-desktop.png");
+      background-size: 100% auto;
+    }
   }
 
   &__text {
@@ -53,6 +65,14 @@
   }
 
   &__bottom-box {
+    @media (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__abstract-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,6 +82,11 @@
     background-position: left center;
     background-size: auto;
     background-repeat: no-repeat;
+
+    @media (min-width: 1024px) {
+      flex-shrink: 0;
+      width: 50%;
+    }
   }
 
   &__bottom-image {

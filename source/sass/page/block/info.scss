@@ -3,6 +3,17 @@
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: #b6bc00;
+
+    @media (min-width: 1024px) {
+      max-width: 1200px;
+      min-height: 400px;
+      margin: 0 auto;
+
+      background-image: url("../img/info.png");
+      background-position: right center;
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+    }
   }
 
   &__title {
@@ -16,6 +27,10 @@
     b {
       font-style: normal;
     }
+
+    @media (min-width: 1024px) {
+      width: 50%;
+    }
   }
 
   &__image-box {
@@ -26,6 +41,10 @@
     background-position: right center;
     background-size: auto 100%;
     background-repeat: no-repeat;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
   }
 
   &__text {
@@ -34,5 +53,9 @@
     line-height: 27px;
     font-family: "Montserrat", sans-serif;
     color: #ffffff;
+
+    @media (min-width: 1024px) {
+      width: 50%;
+    }
   }
 }

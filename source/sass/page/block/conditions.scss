@@ -16,6 +16,11 @@
     padding: 0;
     margin: 0;
     list-style: none;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__item {
@@ -35,6 +40,12 @@
       width: 110px;
       height: 110px;
       transform: translateY(-50%) rotate(45deg);
+
+      @media (min-width: 1024px) {
+        top: auto;
+        bottom: 25px;
+        transform: rotate(45deg);
+      }
     }
 
     &--0 {
@@ -59,6 +70,14 @@
         background-color: #761085;
       }
     }
+
+    @media (min-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      width: calc(33% - 10px);
+      min-height: 387px;
+      padding: 50px;
+    }
   }
 
   &__counter {
@@ -74,6 +93,10 @@
     top: 0;
     right: 20px;
     max-width: 170px;
+
+    @media (min-width: 1024px) {
+      position: static;
+    }
   }
 
   &__text {
@@ -83,6 +106,10 @@
 
     b {
       text-decoration: underline;
+    }
+
+    @media (min-width: 1024px) {
+      margin-top: auto;
     }
   }
 }
