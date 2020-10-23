@@ -8,6 +8,7 @@ mixin category()
             ul.category__list
                 each category, index in categoryItems
                     li.category__item(class='category__item--' + index)
-                        .category__image-box
-                            img.category__image(src=img + category.icon + '.png')
+                        picture.category__image-box
+                            source(media='(max-width: 1024px)' srcset=img + category.icon + '.png')
+                            img.category__image(src=img + category.icon + '-desktop.png')
                         p.category__text!= category.text

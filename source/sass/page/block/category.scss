@@ -1,7 +1,13 @@
 .category {
+  border-bottom: 1px solid #e0e3e5;
+
+  @media (min-width: 1024px) {
+    max-width: 1484px;
+    margin: 0 auto;
+  }
+
   &__wrapper {
     padding: 50px 0;
-    border-bottom: 1px solid #e0e3e5;
 
     @media (min-width: 1024px) {
       max-width: 1200px;
@@ -43,6 +49,11 @@
     box-sizing: border-box;
     overflow: hidden;
 
+    @media (min-width: 1024px) {
+      padding-top: 80px;
+      overflow: visible;
+    }
+
     &::before {
       content: '';
       display: block;
@@ -52,6 +63,10 @@
       width: 94px;
       height: 94px;
       transform: translateY(-50%) rotate(45deg);
+
+      @media (min-width: 1024px) {
+        display: none;
+      }
     }
 
     @media (min-width: 1024px) {
@@ -63,12 +78,8 @@
         width: calc(66% - 5px);
         order: 1;
 
-        .category__image-box {
-          width: 400px;
-          left: 70%;
-        }
-
         .category__text {
+          width: 30%;
           font-size: 30px;
           line-height: 38px;
         }
@@ -88,14 +99,13 @@
         order: 2;
         background-color: transparent;
 
-        .category__image-box {
-          bottom: 30px;
-          left: 75%;
-        }
-
         .category__text {
           font-size: 20px;
           line-height: 131.7%;
+        }
+
+        .category__image-box {
+          right: -45px;
         }
       }
     }
@@ -115,7 +125,8 @@
         transform: translate(-50%, 50%);
 
         @media (min-width: 1024px) {
-          width: 350px;
+          width: auto;
+          transform: translateY(50%);
         }
       }
 
@@ -130,8 +141,13 @@
         background-color: transparent;
 
         .category__text {
+          width: 30%;
           font-size: 20px;
           line-height: 25px;
+        }
+
+        .category__image-box {
+          bottom: 30%;
         }
       }
 
@@ -186,8 +202,11 @@
     z-index: 1;
 
     @media (min-width: 1024px) {
-      width: 200px;
-      left: 65%;
+      width: auto;
+      left: auto;
+      right: 0;
+      bottom: 50%;
+      transform: translateY(50%);
     }
   }
 }

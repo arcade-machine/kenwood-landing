@@ -112,6 +112,7 @@ $c-primary: #fff;
         margin: 0 15px;
         padding: 0;
         cursor: pointer;
+        transition: all 0.2s ease;
         button {
             border: 0;
             background: transparent;
@@ -124,6 +125,7 @@ $c-primary: #fff;
             color: transparent;
             padding: 5px;
             cursor: pointer;
+            transition: all 0.2s ease;
             &:hover, &:focus {
                 outline: none;
                 &:before {
@@ -176,15 +178,30 @@ $c-primary: #fff;
     }
 
     li {
+        width: 10px;
+        height: 10px;
+
         button {
+            width: 10px;
+            height: 10px;
+
             &:before {
+                width: 10px;
+                height: 10px;
                 border: 2px solid transparent;
                 background-color: #ffffff;
             }
         }
-        &.slick-active button:before {
-            border: 2px solid #FFFFFF;
-            background-color: transparent;
+        &.slick-active button {
+            width: 15px;
+            height: 15px;
+
+            &:before {
+                width: 15px;
+                height: 15px;
+                border: 2px solid #FFFFFF;
+                background-color: transparent;
+            }
         }
     }
 }

@@ -1,12 +1,16 @@
 .features {
   @media (min-width: 1024px) {
-    max-width: 1200px;
+    max-width: 1484px;
     margin: 0 auto;
-    padding: 0 10px;
+    overflow: hidden;
   }
 
   &__wrapper {
-    overflow: hidden;
+    @media (min-width: 1024px) {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 10px;
+    }
   }
 
   &__title {
@@ -110,16 +114,28 @@
 
   &__column {
     width: 20%;
+    position: relative;
 
-    &:hover {
+    &::before {
+      content: '';
+      display: none;
+      position: absolute;
+      left: -5%;
+      top: -5%;
+      width: 110%;
+      height: 110%;
       box-shadow: 0px -6px 20px #E0E0E0;
+    }
+
+    &:hover::before {
+      display: block;
     }
 
     &--title {
       width: 31%;
 
-      &:hover {
-        box-shadow: unset;
+      &:hover::before {
+        display: none;
       }
 
       .features__cell {
@@ -135,6 +151,10 @@
           width: 150vw;
           height: 1px;
           background-color: #BDBDBD;
+        }
+
+        &:first-of-type::before {
+          display: none;
         }
       }
     }
