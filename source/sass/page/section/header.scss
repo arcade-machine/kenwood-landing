@@ -1,0 +1,106 @@
+.header {
+  &__container {
+    max-width: 1200px;
+    padding: 20px 10px;
+    margin: 0 auto;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__logo-box {
+    margin-right: 100px;
+  }
+
+  &__phone-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone-icon-box {
+    margin-right: 15px;
+  }
+
+  &__phone-icon {
+    display: block;
+  }
+
+  &__phone-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #BDBDBD;
+  }
+
+  &__phone {
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    color: #231F20;
+    text-decoration: none;
+  }
+
+  &__actions {
+    display: flex;
+    margin-left: auto;
+  }
+
+  &__registration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    min-height: 35px;
+    margin-right: 10px;
+    border: 1px solid #BDBDBD;
+    border-radius: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #4F4F4F;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 90px;
+    min-height: 35px;
+    margin-right: 10px;
+    border-radius: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    background-color: #20CE58;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__navigation-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #231F20;
+    text-decoration: none;
+
+    &:hover {
+      color: #D34500;
+    }
+  }
+}
