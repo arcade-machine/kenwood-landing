@@ -4,10 +4,19 @@
     max-width: 1200px;
     padding: 40px 10px;
     margin: 0 auto;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
   }
 
   &__links, &__contacts {
     width: 50%;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
   }
 
   &__header {
@@ -17,6 +26,10 @@
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.03em;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__navigation {
@@ -44,6 +57,10 @@
   &__phone-box {
     width: 50%;
     margin-bottom: 40px;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__phone-text {
@@ -74,6 +91,10 @@
     font-size: 16px;
     color: #D34500;
     text-decoration: underline;
+
+    @media (max-width: 1024px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__callback {
