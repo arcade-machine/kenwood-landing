@@ -174,4 +174,17 @@ $c-primary: #fff;
     .slick-dots {
         bottom: 20px;
     }
+
+    li {
+        button {
+            &:before {
+                border: 2px solid transparent;
+                background-color: #ffffff;
+            }
+        }
+        &.slick-active button:before {
+            border: 2px solid #FFFFFF;
+            background-color: transparent;
+        }
+    }
 }

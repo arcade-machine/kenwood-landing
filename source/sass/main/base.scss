@@ -4,13 +4,18 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 530px;
   font-family: "Merriweather", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.56px;
   font-size: $f-text;
   color: $c-primary-text;
+  scroll-behavior: smooth;
 }
 
 img {

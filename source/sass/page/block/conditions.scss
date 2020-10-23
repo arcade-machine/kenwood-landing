@@ -55,6 +55,14 @@
     }
 
     &--1 {
+      @media (min-width: 1024px) {
+        .conditions__image {
+          position: relative;
+          top: -50px;
+          right: -100px;
+        }
+      }
+
       &::before {
         background-color: #d11b59;
       }
@@ -104,7 +112,9 @@
     font-size: 18px;
     color: #181818;
 
-    b {
+    a {
+      font-weight: 700;
+      color: inherit;
       text-decoration: underline;
     }
 

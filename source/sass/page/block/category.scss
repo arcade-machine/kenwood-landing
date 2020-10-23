@@ -6,6 +6,7 @@
     @media (min-width: 1024px) {
       max-width: 1200px;
       margin: 0 auto;
+      padding: 50px 10px;
     }
   }
 
@@ -17,6 +18,10 @@
     font-weight: 600;
     text-transform: uppercase;
     color: #1e1e1e;
+
+    @media (min-width: 1024px) {
+      padding: 0;
+    }
   }
 
   &__list {
@@ -56,6 +61,17 @@
     &--0 {
       @media (min-width: 1024px) {
         width: calc(66% - 5px);
+        order: 1;
+
+        .category__image-box {
+          width: 400px;
+          left: 70%;
+        }
+
+        .category__text {
+          font-size: 30px;
+          line-height: 38px;
+        }
       }
 
       &::before {
@@ -67,6 +83,21 @@
       &::before {
         background-color: #ffcc33;
       }
+
+      @media (min-width: 1024px) {
+        order: 2;
+        background-color: transparent;
+
+        .category__image-box {
+          bottom: 30px;
+          left: 75%;
+        }
+
+        .category__text {
+          font-size: 20px;
+          line-height: 131.7%;
+        }
+      }
     }
 
     &--2 {
@@ -75,12 +106,17 @@
 
       @media (min-width: 1024px) {
         width: calc(33% - 12px);
+        order: 4;
       }
 
       .category__image-box {
         width: 200px;
         bottom: 50%;
         transform: translate(-50%, 50%);
+
+        @media (min-width: 1024px) {
+          width: 350px;
+        }
       }
 
       &::before {
@@ -89,12 +125,31 @@
     }
 
     &--3 {
+      @media (min-width: 1024px) {
+        order: 3;
+        background-color: transparent;
+
+        .category__text {
+          font-size: 20px;
+          line-height: 25px;
+        }
+      }
+
       &::before {
         background-color: #b6bd00;
       }
     }
 
     &--4 {
+      @media (min-width: 1024px) {
+        order: 5;
+
+        .category__text {
+          font-size: 24px;
+          line-height: 25px;
+        }
+      }
+
       &::before {
         background-color: #477707;
       }
@@ -114,6 +169,7 @@
     @media (min-width: 1024px) {
       font-size: 30px;
       line-height: 38px;
+      width: 50%;
     }
   }
 
@@ -131,6 +187,7 @@
 
     @media (min-width: 1024px) {
       width: 200px;
+      left: 65%;
     }
   }
 }

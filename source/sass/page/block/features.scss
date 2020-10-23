@@ -2,6 +2,7 @@
   @media (min-width: 1024px) {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 10px;
   }
 
   &__wrapper {
@@ -16,10 +17,25 @@
     font-weight: 600;
     text-transform: uppercase;
     color: #1e1e1e;
+
+    @media (min-width: 1024px) {
+      padding: 0;
+    }
   }
 
   &__table {
     display: flex;
+  }
+
+  &__main {
+    @media (min-width: 1024px) {
+      .features__text {
+        color: #231F20;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
   }
 
   &__cell {
@@ -28,6 +44,10 @@
     align-items: center;
     padding: 14px;
     min-height: 79px;
+
+    @media (min-width: 1280px) {
+      min-height: 60px;
+    }
 
     &--checkbox {
       display: flex;
@@ -91,8 +111,16 @@
   &__column {
     width: 20%;
 
+    &:hover {
+      box-shadow: 0px -6px 20px #E0E0E0;
+    }
+
     &--title {
       width: 31%;
+
+      &:hover {
+        box-shadow: unset;
+      }
 
       .features__cell {
         position: relative;
@@ -106,7 +134,7 @@
           left: -50vw;
           width: 150vw;
           height: 1px;
-          background-color: #A0A0A0;
+          background-color: #BDBDBD;
         }
       }
     }
@@ -117,5 +145,9 @@
     justify-content: center;
     align-items: center;
     padding: 20px 0;
+
+    @media (min-width: 1024px) {
+      padding-top: 50px;
+    }
   }
 }

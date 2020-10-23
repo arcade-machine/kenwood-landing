@@ -3,7 +3,7 @@ mixin actions()
         .actions__wrapper
             h2.actions__title
                 | Выберите кухонную машину
-            ul.actions__list
+            ul.actions__list#choose
                 - var n = 0;
                     while n < 3
                         li.actions__item
@@ -28,7 +28,7 @@ mixin actions()
 
             h2.actions__title
                 | Выберите три любые насадки
-            ul.actions__list
+            ul.actions__list#add
                 - var a = 0;
                     while a < 3
                         li.actions__item

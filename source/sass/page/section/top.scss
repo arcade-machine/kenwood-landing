@@ -103,9 +103,11 @@
     font-weight: 700;
     color: #ffffff;
     background-color: #d44300;
+    text-decoration: none;
 
     @media (min-width: 768px) {
       min-width: 185px;
+      min-height: 45px;
       font-size: 14px;
       border-radius: 68px;
     }
