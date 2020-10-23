@@ -43,7 +43,7 @@
 
       @media (min-width: 1024px) {
         top: auto;
-        bottom: 25px;
+        bottom: 50px;
         transform: rotate(45deg);
       }
     }
@@ -55,20 +55,22 @@
 
       .conditions__counter {
         position: relative;
-        top: 10px;
+        top: 20px;
       }
     }
 
     &--1 {
       @media (min-width: 1024px) {
         .conditions__image {
+          max-width: 100%;
+          width: 207px;
           top: -53px;
-          right: -75px;
+          right: -45px;
         }
 
         .conditions__counter {
           position: relative;
-          top: -70px;
+          top: -90px;
         }
       }
 
@@ -103,6 +105,10 @@
     font-family: "Montserrat", sans-serif;
     font-size: 100px;
     line-height: 100px;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 0;
+    }
   }
 
   &__image {
@@ -120,6 +126,7 @@
   &__text {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
+    line-height: 127.15%;
     color: #181818;
 
     a {

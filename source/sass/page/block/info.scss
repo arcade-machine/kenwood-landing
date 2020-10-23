@@ -14,7 +14,7 @@
       max-width: 1200px;
       min-height: 400px;
       margin: 0 auto;
-      padding: 50px 20px;
+      padding: 50px 70px;
 
       background-image: url("../img/info.png");
       background-position: right center;
@@ -36,6 +36,7 @@
     }
 
     @media (min-width: 1024px) {
+      padding: 0;
       width: 50%;
     }
   }
@@ -63,6 +64,10 @@
 
     @media (min-width: 1024px) {
       width: 50%;
+      padding: 0;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.025em;
     }
   }
 }

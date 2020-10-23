@@ -115,7 +115,7 @@
       min-height: 220px;
 
       @media (min-width: 1024px) {
-        width: calc(33% - 12px);
+        width: calc(40% - 5px);
         order: 4;
       }
 
@@ -137,6 +137,7 @@
 
     &--3 {
       @media (min-width: 1024px) {
+        width: calc(25% - 12px);
         order: 3;
         background-color: transparent;
 
