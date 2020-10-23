@@ -1,4 +1,10 @@
 .header {
+  &--open {
+    .header__navigation {
+      display: block;
+    }
+  }
+
   &__container {
     max-width: 1200px;
     padding: 20px 10px;
@@ -160,6 +166,7 @@
       align-items: flex-start;
       width: 100%;
       background-color: #ffffff;
+      display: none;
     }
   }
 

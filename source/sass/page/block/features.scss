@@ -9,7 +9,7 @@
   }
 
   &__title {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     padding: 0 20px;
     font-size: 30px;
     font-family: "Montserrat", sans-serif;
@@ -23,8 +23,11 @@
   }
 
   &__cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 14px;
-    min-height: 50px;
+    min-height: 79px;
 
     &--checkbox {
       display: flex;
@@ -69,6 +72,22 @@
     background-image: url("../img/icons/mark.svg");
   }
 
+  &__slider {
+    display: flex;
+    width: 50%;
+
+    .features__column {
+      width: 33%;
+      flex-grow: 1;
+    }
+  }
+
+  &__main {
+    .features__column {
+      width: 100%;
+    }
+  }
+
   &__column {
     width: 20%;
 
@@ -77,6 +96,7 @@
 
       .features__cell {
         position: relative;
+        justify-content: flex-start;
 
         &::before {
           content: "";
@@ -90,5 +110,12 @@
         }
       }
     }
+  }
+
+  &__bottom-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
   }
 }

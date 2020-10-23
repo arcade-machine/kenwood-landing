@@ -1,5 +1,6 @@
+const header = document.querySelector('.header');
+const burger = header.querySelector('.header__burger');
 
-burgerMobile.addEventListener("click", function () {
-    mainHeader.classList.toggle('header--open');
-    pageBody.classList.toggle("no-overflow")
-});
+burger.addEventListener('click', () => {
+    header.classList.toggle('header--open');
+})

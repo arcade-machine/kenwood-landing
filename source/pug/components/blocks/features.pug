@@ -1,5 +1,7 @@
 - var featureTableColumns = [{device: 'Ручной миксер', features: [true, false, false, false, false, false, false, false]}, {device: 'Мясорубка/овощерезка', features: [false, false, false, false, true, false, false, true]}, {device: 'Кухонный комбайн', features: [true, false, false, false, true, false, false, true]}, {device: 'Кухонная машина', features: [true, true, true, true, true, true, true, true]}]
 - var featureTableFeatures = ['', 'Смешивание, взбивание', 'Замес тугого теста', 'Изготовление домашней пасты', 'Приготовление супов пюре и смузи', 'Изготовление фарша из жесткого мяса', 'Приготовление мороженого', 'Просеивание и протирание', 'Нарезка']
+- var firstTable = featureTableColumns.filter ( feature => feature.device !== 'Кухонная машина');
+- var secondTable = featureTableColumns.filter ( feature => feature.device === 'Кухонная машина');
 
 mixin features()
     section.features
@@ -12,18 +14,33 @@ mixin features()
                         .features__cell
                             p.features__feature=cell
 
-                each column in featureTableColumns
-                    .features__column
-                        .features__cell
-                            p.features__text=column.device
-                        each feature in column.features
-                            .features__cell.features__cell--checkbox
-                                if feature
-                                    .features__checkbox(class= column.device === 'Кухонная машина'? 'features__checkbox--red': 'features__checkbox--green')
+                .features__slider
+                    each column in firstTable
+                        .features__column
+                            .features__cell
+                                p.features__text=column.device
+                            each feature in column.features
+                                .features__cell.features__cell--checkbox
+                                    if feature
+                                        .features__checkbox(class= column.device === 'Кухонная машина'? 'features__checkbox--red': 'features__checkbox--green')
 
-                                else
-                                    .features__mark
+                                    else
+                                        .features__mark
+                .features__main
+                    each column in secondTable
+                        .features__column
+                            .features__cell
+                                p.features__text=column.device
+                            each feature in column.features
+                                .features__cell.features__cell--checkbox
+                                    if feature
+                                        .features__checkbox(class= column.device === 'Кухонная машина' ? 'features__checkbox--red' : 'features__checkbox--green')
 
-            .features__bottom-box
+                                    else
+                                        .features__mark
+
+            picture.features__bottom-box
+                source(media='(max-width: 1024px)' srcset=img + 'features-mobile.png')
+                img.features__image(src=img + 'features-desktop.png')
 
 

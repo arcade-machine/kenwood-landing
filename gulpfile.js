@@ -63,9 +63,10 @@ gulp.task("webp", function() {
         .pipe(gulp.dest("build/theme/assets/img/webp"));
 });
 
-gulp.task("watch", ["browserSync", "sass", "pug", "copy"], function () {
+gulp.task("watch", ["browserSync", "sass", "pug", "copy", 'js-user'], function () {
     gulp.watch("source/sass/**/*.scss", ["sass"]);
     gulp.watch("source/pug/**/*.pug", ["pug"]);
+    gulp.watch("source/js/**/*.js", ["js-user"]);
     gulp.watch("build/theme/view/*.html", browserSync.reload);
     gulp.watch("source/js/**/*.js", browserSync.reload);
 });
