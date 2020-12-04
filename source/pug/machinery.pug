@@ -1,0 +1,17 @@
+include components/abstract/mixins
+
+doctype html
+html(lang='ru')
+    +head()
+
+    body
+        .page-layout
+            +header
+
+            main
+                +top
+                +machinery-about
+
+            +footer
+
+        script(src=js + "main.js")

@@ -40,6 +40,47 @@ img {
   overflow: hidden;
 }
 
+.content-section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  @media (min-width: 768px) {
+      margin-top: 80px;
+      margin-bottom: 80px;
+  }
+}
+
+.section-title {
+  font-size: 30px;
+  line-height: 1.1;
+
+  &--increased {
+    font-size: 32px;
+  }
+
+  &--bordered {
+    position: relative;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $divider;
+  }
+}
+
+.upper-text {
+  text-transform: uppercase;
+}
+
+.violet-text {
+  color: $mark-secondary; 
+}
+
 .red-text {
-  color: #D34500;
+  color: $mark-primary;
 }

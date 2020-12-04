@@ -1,0 +1,53 @@
+.machinery-about {
+    &__slogan {
+        max-width: 800px;
+        margin: 30px 0;
+    }
+
+    &__columns {
+        margin-top: 55px;
+
+        @media (min-width: 1024px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__column {
+        display: flex;
+        align-items: flex-start;
+        max-width: 768px;
+        margin-top: 20px;
+        
+        @media (min-width: 1024px) {
+            width: 45%;
+            margin-right: 10px;
+        }
+    }
+
+    &__info {
+        padding-left: 25px;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    &__text {
+        font-family: 'Montserrat', 'Arial', sans-serif;
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    &__btn {
+        display: block;
+        margin: 40px auto 0;
+
+        @media (min-width: 1024px) {
+            min-width: 360px;
+            margin-top: 60px;
+        }
+    }
+}
