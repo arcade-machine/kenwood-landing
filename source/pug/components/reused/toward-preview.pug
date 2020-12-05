@@ -4,5 +4,5 @@ mixin toward-preview(subclass, brand, title, imgsrc, target)
         img.toward-preview__img(src=imgsrc alt="")
         b.toward-preview__brand !{brand}
         h3.toward-preview__title= title
-        button.toward-preview__btn.button.scroll-btn(data-target= target type="button") Подробнее о модели
+        a.toward-preview__btn.button.scroll-btn(href= target) Подробнее о модели
         

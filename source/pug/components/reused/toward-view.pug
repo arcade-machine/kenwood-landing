@@ -1,5 +1,5 @@
-mixin toward-view(url, name, slides)
-    article.toward-view.content-section
+mixin toward-view(id, url, name, slides)
+    article.toward-view.content-section(id= id)
         .toward-view__wrapper.container.container--bordered
             .toward-view__image-holder  
                 img.toward-view__img(src= url alt="")
