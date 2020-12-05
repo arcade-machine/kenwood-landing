@@ -1,0 +1,8 @@
+mixin presentation(title, text, url)
+    .presentation
+        .presentation__info
+            b.presentation__title= title
+            p.presentation__text= text
+        .presentation__image-holder
+            img.presentation__img(src=url alt="")
+        

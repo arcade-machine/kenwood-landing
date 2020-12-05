@@ -12,7 +12,7 @@ html(lang='ru')
                 +top
                 +machinery-about
                 +towards-line
-                section.brand.content-section
+                section.content-section
                     .container
                         h2.section-title <span class="upper-text"><span class="mark-letter">k</span>enwood cooking chef</span>
                         +section-slogan-middle('section-slogan--indents section-slogan--limited')
@@ -35,7 +35,28 @@ html(lang='ru')
                             }
                         ]
                     )
-
+                    .content-section
+                        .container.container--bordered
+                            +presentation(
+                                'Предустановленные программы',
+                                'Технологи Cooking Chef продумали программы для приготовления любимых многими, но технологически сложных блюд. 24 программы для сладких и несладких рецептов помогут легко приготовить блюдо, на которое без кухонной машины ушла бы масса сил и времени. Даже у неопытной хозяйки идеальный результат получится с первого раза.',
+                                img + 'presentation-1.jpg'
+                            )
+                            +presentation(
+                                'Вместимость чаши 6,7 литров',
+                                'Полезный объем 3 литра, до 10 порций',
+                                img + 'presentation-2.jpg'
+                            )
+                            +presentation(
+                                '5 насадок в комплекте',
+                                'К-образная насадка, венчик, крюк для теста, насадка для мягких смесей, крюк для подмешивания во время нагрева.',
+                                img + 'presentation-3.jpg'
+                            )
+                            +presentation(
+                                'Интуитивное управление',
+                                'Большой ЖК-дисплей позволяет вручную устанавливать температуру, скорость размешивания и время. Cooking Chef прост в использовании и обеспечивает полный контроль над процессом приготовления.',
+                                img + 'presentation-4.jpg'
+                            )
             +footer
 
         script(src=js + "main.js")

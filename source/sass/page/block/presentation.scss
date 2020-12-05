@@ -1,0 +1,99 @@
+.presentation {
+    @media (min-width: 1024px) {
+        display: flex;
+        align-items: center
+    }
+    &:nth-child(2n) {
+        & .presentation__image-holder {
+            &::before {
+                left: auto;
+                right: 0;
+                border-width: 60px 62px 60px 0;
+                border-color: transparent $mark-secondary transparent transparent;
+            }
+        }
+        @media (min-width: 1024px) {
+            flex-direction: row-reverse;
+
+            & .presentation__info {
+                padding-left: 0;
+                padding-right: 100px;
+
+                &::before {
+                    left: auto;
+                    right: 0;
+                    border-width: 60px 62px 60px 0;
+                    border-color: transparent $mark-secondary transparent transparent;
+                }
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        line-height: 1.2;
+
+        @media (min-width: 1024px) {
+            position: relative;
+            width: 50%;
+            padding-left: 100px;
+            min-height: 120px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 60px 0 60px 62px;
+                border-color: transparent transparent transparent $mark-secondary;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    &__text {
+        @media (min-width: 1024px) {
+            max-width: 400px;
+        }
+    
+    }
+
+    &__image-holder {
+        position: relative;
+        margin: 20px 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 60px 0 60px 62px;
+            border-color: transparent transparent transparent $mark-secondary;
+            transform: translateY(-50%);
+        }
+
+        @media (min-width: 1024px) {
+            width: 50%;
+            margin: 0;
+
+            &::before {
+                content: none;
+            }
+        }
+    }
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+}
