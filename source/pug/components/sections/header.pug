@@ -1,4 +1,4 @@
-- var navigationLinks = ['Кухонные машины', 'Насадки для кухонных машин', 'Коллекция kMix', 'Насадки для kMix', 'Блендеры']
+- var navigationLinks = ['Кухонные машины', 'Насадки для кухонных машин', 'Книга рецептов', 'Вопросы и ответы', 'Инструкции']
 
 mixin header()
     header.header
@@ -17,15 +17,7 @@ mixin header()
                             | Бесплатно по России
                         a.header__phone(href="tel:88006002798")
                             | 8 800 600 27 98
-                .header__actions
-                    a.header__registration(href="#")
-                        | Регистрация
-                    a.header__login(href="#")
-                        | Войти
-                    a.header__user(href="#")
-                        img.header__user-icon(src=img + 'icons/login.svg')
-                    a.header__cart(href="#")
-                        img.header__cart-icon(src=img + 'icons/cart.svg')
+
             ul.header__navigation
                 each link in navigationLinks
                     li.header__navigation-item
