@@ -1,4 +1,5 @@
-mixin video-block(url)
+mixin video-block(url, subclass)
 
-    .video-block
-        img(src=img + "video-stub.jpg")
+    .video-block(class=subclass)
+        video.video-block__video
+            source(src=url type="video/mp4")

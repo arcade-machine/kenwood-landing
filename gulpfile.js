@@ -49,7 +49,7 @@ gulp.task("pug", function buildHTML() {
 // });
 
 gulp.task("images", function() {
-    return gulp.src("source/img/**/*.{png,jpg,ico,gif,svg}")
+    return gulp.src("source/img/**/*.{png,jpg,ico,gif,svg,mp4}")
         .pipe(imagemin([
             imagemin.optipng({optimizationLevel: 3}),
             imagemin.jpegtran({progressive: true}),
