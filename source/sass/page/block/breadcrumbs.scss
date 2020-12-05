@@ -1,0 +1,58 @@
+.breadcrumbs {
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-self: center;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -40px;
+            left: 25px;
+            width: calc(100% - 50px);
+            height: 1px;
+            background-color: $divider;
+      
+            @media (min-width: 768px) {
+              left: 10px;
+              width: calc(100% - 20px);
+            }
+        }
+    }
+
+    &__item {
+        &:not(:last-of-type) {
+            position: relative;
+            padding-right: 30px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: calc(50% - 10px);
+                right: 10px;
+                width: 10px;
+                height: 18px;
+                background-image: url("data:image/svg+xml,%3Csvg width='10' height='18' viewBox='0 0 10 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 17L9 9L1 1' stroke='black'/%3E%3C/svg%3E%0A");
+            }
+        }
+    }
+
+    &__link {
+        color: #000;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+
+
+        &:not(.breadcrumbs__link--active):hover {
+            text-decoration: underline;
+        }
+
+        &--active {
+            color: $mark-primary;
+            font-weight: 500;
+        }
+    }
+}

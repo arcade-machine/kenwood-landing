@@ -1,0 +1,23 @@
+.nozzle-card {
+    &__img {
+        display: block;
+        margin: 0 auto;
+
+        @media (min-width: 560px) {
+            margin: 0;
+        }
+    }
+
+    &__name {
+        margin-top: 20px;
+        font-family: "Montserrat";
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.2;
+        text-align: center;
+
+        @media (min-width: 560px) {
+            text-align: left;
+        }
+    }
+}
