@@ -19,4 +19,20 @@
     color: $mark-primary;
     background-color: $white;
   }
+
+  &--violet {
+    border-color: $mark-secondary;
+    background-color: $mark-secondary;
+    &:hover, &:focus {
+      color: $mark-secondary;
+    }
+  }
+
+  &--gray {
+    border-color: $accent;
+    background-color: $accent;
+    &:hover, &:focus {
+      color: $accent;
+    }
+  }
 }

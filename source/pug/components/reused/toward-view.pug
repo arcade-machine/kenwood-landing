@@ -2,7 +2,7 @@ mixin toward-view(url, name, slides)
     article.toward-view.content-section
         .toward-view__wrapper.container.container--bordered
             .toward-view__image-holder  
-                img(src= url alt="")
+                img.toward-view__img(src= url alt="")
             .toward-view__info
                 h3.section-title.section-title--bordered.upper-text !{name}
                 .toward-view__slider
@@ -12,8 +12,8 @@ mixin toward-view(url, name, slides)
                             p.toward-view__text= slide.text
                 .toward-view__buttons
                     a.toward-view__btn.button(href="") Купить
-                    button.toward-view__btn.button(type="button") + 1 насадка в подарок
-                    button.toward-view__btn.button(type="button") Характеристики
+                    button.toward-view__btn.button.button--violet(type="button") + 1 насадка в подарок
+                    button.toward-view__btn.button.button--gray(type="button") Характеристики
 
 
 
