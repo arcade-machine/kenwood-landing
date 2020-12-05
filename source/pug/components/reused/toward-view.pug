@@ -11,9 +11,55 @@ mixin toward-view(id, url, name, slides)
                             h4.toward-view__name.section-title= slide.name
                             p.toward-view__text= slide.text
                 .toward-view__buttons
-                    a.toward-view__btn.button(href="") Купить
+                    a.toward-view__btn.button(href="/") Купить
                     button.toward-view__btn.button.button--violet(type="button") + 1 насадка в подарок
-                    button.toward-view__btn.button.button--gray(type="button") Характеристики
+                    button.toward-view__btn.button.button--gray.characteristics-open(type="button") Характеристики
+                .toward-view__characteristics
+                    .toward-view__characteristics-heading
+                        h5.toward-view__characteristics-title Технические характеристики
+                        button.toward-view__characteristics-close(type="button")
+                            svg(width="14" height="16" viewBox="0 0 14 16" fill="none")
+                                path(d="M1 1.9502L13 14.2502" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                                path(d="M13 1.9502L1 14.2502" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                    .toward-view__characteristics-table
+                        .toward-view__characteristics-row
+                            .toward-view__characteristics-cell.toward-view__characteristics-cell--heading Модель
+                            .toward-view__characteristics-cell KCC9040S
+                        .toward-view__characteristics-row
+                            .toward-view__characteristics-cell.toward-view__characteristics-cell--heading Комплектация
+                            .toward-view__characteristics-cell Корзина для приготовления на пару<br>
+                                | 5 насадок для работы в чаше: (к-образная насадка, венчик, крюк для теста, насадка для мягких смесей, крюк для подмешивания во время нагрева)<br>
+                                | Кулинарная лопатка<br>
+                                | Маленький скребок<br>
+                                | Термостойкий коврик<br>
+                                | Защитная крышка
+                        .toward-view__characteristics-row
+                            .toward-view__characteristics-cell.toward-view__characteristics-cell--heading Гарантия, лет
+                            .toward-view__characteristics-cell 2
+                        .toward-view__characteristics-row
+                            .toward-view__characteristics-cell.toward-view__characteristics-cell--heading Вес нетто, кг
+                            .toward-view__characteristics-cell 12.88
+                        .toward-view__characteristics-row
+                            .toward-view__characteristics-cell.toward-view__characteristics-cell--heading Насадки в комплекте
+                            .toward-view__characteristics-cell Спиральная насадка-крюк для теста из нержавеющей стали,
+                        .toward-view__characteristics-row
+                            .toward-view__characteristics-cell.toward-view__characteristics-cell--heading Гарантия, лет
+                            .toward-view__characteristics-cell 2
+                        .toward-view__characteristics-row
+                            .toward-view__characteristics-cell.toward-view__characteristics-cell--heading Вес нетто, кг
+                            .toward-view__characteristics-cell 12.88
+                        .toward-view__characteristics-row
+                            .toward-view__characteristics-cell.toward-view__characteristics-cell--heading Вес нетто, кг
+                            .toward-view__characteristics-cell 12.88
+                        .toward-view__characteristics-row
+                            .toward-view__characteristics-cell.toward-view__characteristics-cell--heading Гарантия, лет
+                            .toward-view__characteristics-cell 2
+                        .toward-view__characteristics-row
+                            .toward-view__characteristics-cell.toward-view__characteristics-cell--heading Вес нетто, кг
+                            .toward-view__characteristics-cell 12.88
+                        .toward-view__characteristics-row
+                            .toward-view__characteristics-cell.toward-view__characteristics-cell--heading Вес нетто, кг
+                            .toward-view__characteristics-cell 12.88
 
 
 
