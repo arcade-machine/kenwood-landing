@@ -1,0 +1,33 @@
+.links-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+
+    &__item {
+        &:not(:last-of-type) {
+            margin-right: 58px;
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 22px 0 18px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #000;
+        text-decoration: none;
+
+        &:not(.links-list__link--active) {
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color:  #d02559;
+            }
+        }
+
+        &--active {
+            color: #d02559;
+        }
+    }
+}

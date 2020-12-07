@@ -1,0 +1,10 @@
+mixin links-list(array)
+
+    ul.links-list
+        each link,index in array
+            if index === 0
+                li.links-list__item
+                    span.links-list__link.links-list__link--active= link
+            else
+                li.links-list__item
+                    a.links-list__link(href="#")= link

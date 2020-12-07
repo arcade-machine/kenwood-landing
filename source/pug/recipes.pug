@@ -1,0 +1,22 @@
+include components/abstract/mixins
+
+doctype html
+html(lang='ru')
+    +head()
+
+    body
+        .page-layout
+            +header
+
+            main
+                +top
+                section.content-section
+                    .container.container--bordered
+                        h2.section-title.section-title--increased.section-title--bordered Что вы хотели бы приготовить?
+                        +links-list(['Закуски', 'Салаты', 'Супы', 'Горячее', 'Десерты'])
+                +conditions
+                +actions
+
+            +footer
+
+        script(src=js + "main.js")
