@@ -1,0 +1,11 @@
+mixin recipes-preview()
+    section.content-section.recipes-preview
+        .container.container--bordered
+            h2.section-title Вам понадобится:
+            .recipes-preview__columns
+                .recipes-preview__image-holder
+                    img.recipes-preview__img(src=img + "recipes-preview.jpg" alt="")
+                .recipes-preview__cards
+                    +nozzle-preview('recipes-preview__item', img + 'nozzle-preview-1.jpg', 'Насадка из высококачественной нержавеющей стали Kenwood AT971A предназначена для приготовления в домашних условиях пасты тальятелле')
+                    +nozzle-preview('recipes-preview__item', img + 'nozzle-preview-2.jpg', 'Насадка из высококачественной нержавеющей стали Kenwood AT971A предназначена для приготовления в домашних условиях пасты тальятелле')
+                    +nozzle-preview('recipes-preview__item', img + 'nozzle-preview-3.jpg', 'Насадка из высококачественной нержавеющей стали Kenwood AT971A предназначена для приготовления в домашних условиях пасты тальятелле')

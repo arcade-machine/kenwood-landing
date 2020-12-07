@@ -1,0 +1,45 @@
+.nozzle-preview {
+    display: flex;
+    align-items: center;
+
+    &__image-holder {
+        flex-shrink: 0;
+        margin-right: 15px;
+        
+        @media (min-width: 768px) {
+            margin-right: 0;
+        }
+
+        @media (min-width: 1024px) {
+            margin-right: 25px;
+        }
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__text {
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        line-height: 1.2;
+        
+        @media (min-width: 768px) {
+            font-size: 16px;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 18px;
+        }
+    }
+
+    &__link {
+        display: block;
+        max-width: 234px;
+        margin-top: 10px;
+
+        @media (min-width: 1024px) {
+            margin-top: 25px;
+        }
+    }
+}

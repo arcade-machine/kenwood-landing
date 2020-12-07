@@ -1,0 +1,7 @@
+mixin nozzle-preview(subclass, url, text)
+    article.nozzle-preview(class= subclass)
+        .nozzle-preview__image-holder
+            img.nozzle-preview__img(src= url alt="")
+        .nozzle-preview__info
+            p.nozzle-preview__text= text
+            a.nozzle-preview__link.button(href="") Подробнее о насадке
