@@ -4,6 +4,11 @@
     align-items: center;
     list-style: none;
 
+    &--bordered {
+        border-top: 1px solid $divider;
+        border-bottom: 1px solid $divider;
+    }
+
     &__item {
         &:not(:last-of-type) {
             margin-right: 58px;

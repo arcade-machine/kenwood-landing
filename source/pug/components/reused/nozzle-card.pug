@@ -1,4 +1,4 @@
-mixin nozzle-card(url, name)
-    article.nozzle-card
+mixin nozzle-card(url, name, subclass)
+    article.nozzle-card(class= subclass)
         img.nozzle-card__img(src= url alt="")
         h3.nozzle-card__name= name

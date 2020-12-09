@@ -1,6 +1,6 @@
-mixin links-list(array)
+mixin links-list(array, subclass)
 
-    ul.links-list
+    ul.links-list(class=subclass)
         each link,index in array
             if index === 0
                 li.links-list__item
