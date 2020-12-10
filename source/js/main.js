@@ -16,15 +16,3 @@ $('.toward-view__characteristics-close').each(function() {
         $(this).closest('.toward-view__characteristics--visible').removeClass('toward-view__characteristics--visible');
     });
 });
-
-$('.video-block__video').each(function() {
-    $(this).on('click', function() {
-        if ($(this).parent().hasClass('video-block--playing')) {
-            $(this).parent().removeClass('video-block--playing');
-            $(this)[0].pause();
-        } else {
-            $(this).parent().addClass('video-block--playing');
-            $(this)[0].play();
-        }
-    });
-});
