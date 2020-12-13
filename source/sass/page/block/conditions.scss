@@ -4,7 +4,6 @@
     font-family: "Montserrat", sans-serif;
     font-size: 30px;
     font-weight: 600;
-    text-transform: uppercase;
     color: #1e1e1e;
   }
 
@@ -22,9 +21,12 @@
   }
 
   &__item {
+    display: flex;
+    align-items: center;
     position: relative;
     min-height: 205px;
     padding: 15px 50px;
+    padding-right: 200px;
     margin-bottom: 20px;
     background-color: #f7f7f7;
     overflow: hidden;
@@ -34,14 +36,15 @@
       display: block;
       position: absolute;
       top: 50%;
-      right: -55px;
-      width: 110px;
-      height: 110px;
+      right: -80px;
+      width: 150px;
+      height: 150px;
       transform: translateY(-50%) rotate(45deg);
 
       @media (min-width: 1024px) {
-        top: auto;
-        bottom: 50px;
+        top: 30px;
+        left: -75px;
+        right: auto;
         transform: rotate(45deg);
       }
     }
@@ -58,20 +61,6 @@
     }
 
     &--1 {
-      @media (min-width: 1024px) {
-        .conditions__image {
-          max-width: 100%;
-          width: 207px;
-          top: -53px;
-          right: -45px;
-        }
-
-        .conditions__counter {
-          position: relative;
-          top: -90px;
-        }
-      }
-
       &::before {
         background-color: #d11b59;
       }
@@ -89,53 +78,48 @@
 
     @media (min-width: 1024px) {
       display: flex;
-      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
       width: calc(33% - 10px);
-      min-height: 387px;
-      padding: 50px;
+      min-height: 445px;
+      padding: 30px;
       padding-bottom: 70px;
-    }
-  }
-
-  &__counter {
-    margin-bottom: 30px;
-    color: #ededed;
-    font-family: "Montserrat", sans-serif;
-    font-size: 100px;
-    line-height: 100px;
-
-    @media (min-width: 1024px) {
-      margin-bottom: 0;
     }
   }
 
   &__image {
     position: absolute;
-    top: 0;
-    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
     max-width: 170px;
 
     @media (min-width: 1024px) {
-      position: relative;
-      max-width: 207px;
+      max-width: 100%;
+      top: auto;
+      bottom: 0;
+      transform: none;
     }
   }
 
   &__text {
+    width: 100%;
+    padding-left: 95px;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     line-height: 127.15%;
-    color: #181818;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #231F20;
+
+    @media (max-width: 1024px) {
+      padding-left: 0;
+    }
 
     a {
       font-weight: 700;
       color: inherit;
       text-decoration: underline;
-    }
-
-    @media (min-width: 1024px) {
-      margin-top: auto;
-      width: 70%;
     }
   }
 }

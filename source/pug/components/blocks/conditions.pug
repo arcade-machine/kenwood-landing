@@ -1,4 +1,4 @@
-- var conditions = [{text: 'Выбери <a href="#choose">кухонную машину</a>, положи её в корзину', icon: 'choose'}, {text: 'Добавь <br><a href="#add">насадки</a>', icon: 'add'}, {text: 'Стоимость пересчитается автоматически', icon: 'cost'}]
+- var conditions = [{text: 'Выбери <a href="#choose"><span class="red-text">к</span>ухонную машину</a>, положи её в корзину', icon: 'choose'}, {text: 'Добавь <br><a href="#add">насадки</a>', icon: 'add'}, {text: 'Стоимость пересчитается <b>автоматически</b>', icon: 'cost'}]
 
 mixin conditions()
     section.conditions.content-section
@@ -9,5 +9,4 @@ mixin conditions()
                 each condition, index in conditions
                     li.conditions__item(class='conditions__item--' + index)
                         img.conditions__image(src=img + condition.icon + '.png')
-                        p.conditions__counter=index + 1
                         p.conditions__text!=condition.text
