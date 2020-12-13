@@ -1,0 +1,101 @@
+.cooking {
+    &__container {
+        max-width: 1055px;
+    }
+
+    &__title {
+        width: 80%;
+        margin: 0 auto 40px;
+        font-family: Merriweather;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 38px;
+        text-align: center;
+        color: #000000;
+    }
+
+    &__list {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 730px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        
+        background-image: url("../img/cooking.png");
+        background-size: 100% auto;
+        background-position: 0 65px;
+        background-repeat: no-repeat;
+    }
+
+    &__item {
+        font-family: Montserrat;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+
+        &--actions {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 350px;
+        }
+
+        b {
+            font-weight: bold;
+        }
+
+        &:nth-child(1) {
+            width: 660px;
+            margin-left: auto;
+            margin-bottom: 230px;
+        }
+
+        &:nth-child(2) {
+            width: 325px;
+            margin-bottom: auto;
+        }
+
+        &:nth-child(3) {
+            width: 600px;
+            margin-left: auto;
+        }
+    }
+
+    &__text {
+        margin-bottom: 40px;
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000000;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        min-width: 210px;
+        border-radius: 30px;
+        min-height: 60px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: #ffffff;
+        background-color: #D34500;
+        text-decoration: none;
+    
+        @media (min-width: 768px) {
+          min-width: 185px;
+          min-height: 45px;
+          margin-top: 40px;
+          font-size: 14px;
+          border-radius: 68px;
+        }
+    }
+}
