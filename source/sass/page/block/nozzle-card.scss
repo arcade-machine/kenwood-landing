@@ -1,4 +1,11 @@
 .nozzle-card {
+    &__image-holder {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 240px;
+    }
+
     &__img {
         display: block;
         margin: 0 auto;
@@ -9,10 +16,10 @@
     }
 
     &__name {
-        margin-top: 20px;
-        font-family: "Montserrat";
+        margin-top: 10px;
+        font-family: "Montserrat", sans-serif;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 1.2;
         text-align: center;
 

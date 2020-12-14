@@ -26,13 +26,13 @@
 
         &:not(.links-list__link--active) {
             &:hover {
-                text-decoration: underline;
-                text-decoration-color:  #d02559;
+                color: $mark-primary;
+                font-weight: 700;
             }
         }
 
         &--active {
-            color: #d02559;
+            color: $mark-primary;
         }
     }
 }

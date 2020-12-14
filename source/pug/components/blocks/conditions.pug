@@ -5,7 +5,7 @@ mixin conditions()
         .conditions__container.container
             h2.conditions__title
                 | Как получить подарок
-            ul.conditions__list
+            ol.conditions__list
                 each condition, index in conditions
                     li.conditions__item(class='conditions__item--' + index)
                         img.conditions__image(src=img + condition.icon + '.png')

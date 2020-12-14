@@ -70,7 +70,6 @@
 
   &__text {
     font-size: 28px;
-    font-weight: 300;
     font-style: italic;
 
     &--top {
@@ -79,10 +78,6 @@
       @media (min-width: 768px) {
         margin-bottom: 0;
       }
-    }
-
-    &--middle {
-      font-weight: 600;
     }
 
     @media (min-width: 768px) {

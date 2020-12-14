@@ -6,7 +6,7 @@
     &__title {
         width: 80%;
         margin: 0 auto 40px;
-        font-family: Merriweather;
+        font-family: "Merriweather", sans-serif;
         font-style: italic;
         font-weight: bold;
         font-size: 30px;
@@ -19,19 +19,23 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        min-height: 730px;
+        min-height: 760px;
         padding: 0;
         margin: 0;
         list-style: none;
-        
         background-image: url("../img/cooking.png");
         background-size: 100% auto;
         background-position: 0 65px;
         background-repeat: no-repeat;
+
+        @media (max-width: 1024px) {
+            background-image: none;
+            min-height: auto;
+        }
     }
 
     &__item {
-        font-family: Montserrat;
+        font-family: "Montserrat", sans-serif;
         font-style: normal;
         font-size: 18px;
         line-height: 22px;
@@ -42,32 +46,48 @@
             bottom: 0;
             left: 0;
             width: 350px;
-        }
 
-        b {
-            font-weight: bold;
+            @media (max-width: 1024px) {
+                position: static;
+                width: 100%;
+            }
         }
 
         &:nth-child(1) {
-            width: 660px;
+            width: 700px;
             margin-left: auto;
             margin-bottom: 230px;
+
+            @media (max-width: 1024px) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
         }
 
         &:nth-child(2) {
             width: 325px;
             margin-bottom: auto;
+
+            @media (max-width: 1024px) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
         }
 
         &:nth-child(3) {
-            width: 600px;
+            width: 500px;
             margin-left: auto;
+
+            @media (max-width: 1024px) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
         }
     }
 
     &__text {
         margin-bottom: 40px;
-        font-family: Merriweather;
+        font-family: "Merriweather", sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
@@ -80,6 +100,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 20px;
+        max-width: 350px;
         min-width: 210px;
         border-radius: 30px;
         min-height: 60px;

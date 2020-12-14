@@ -4,7 +4,7 @@ mixin footer()
     footer.footer
         .footer__container
             .footer__links
-                h3.footer__header
+                h3.footer__header.footer__header--under
                     | Покупателям
                 ul.footer__navigation
                     each link in footerLinks
@@ -23,6 +23,3 @@ mixin footer()
 
                     a.footer__email(href='mailto:info@kenwoodshop.ru')
                         | info@kenwoodshop.ru
-
-                    a.footer__callback(href="#")
-                        | Обратный звонок

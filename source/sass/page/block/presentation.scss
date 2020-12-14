@@ -26,6 +26,13 @@
                     border-color: transparent $mark-secondary transparent transparent;
                 }
             }
+
+            & .presentation__title,
+            & .presentation__text {
+                width: 100%;
+                max-width: 400px;
+                margin: 0 auto;
+            }
         }
     }
 
