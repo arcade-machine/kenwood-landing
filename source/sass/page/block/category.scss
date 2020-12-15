@@ -127,6 +127,12 @@
           display: none;
         }
       }
+
+      .category__image-box {
+        @media (min-width: 1200px) {
+          right: 10px;
+        }
+      }
     }
 
     &--2 {
