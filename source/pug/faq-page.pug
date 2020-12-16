@@ -1,0 +1,21 @@
+include components/abstract/mixins
+
+doctype html
+html(lang='ru')
+    +head()
+
+    body
+        .page-layout
+            +header
+
+            main
+                +top
+                section.content-section
+                    .container
+                        h2.section-title.section-title--increased.section-title--bordered Вопросы и ответы
+                        +links-list(['Кухонные машины', 'Насадки для кухонных машин'])
+                        +faq-text
+                
+            +footer
+
+        script(src=js + "main.js")

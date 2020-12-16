@@ -1,0 +1,84 @@
+.faq {
+    max-width: 730px;
+    margin: 40px 0 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    list-style: none;
+
+    &__item {
+        border-bottom: 1px solid $divider;
+    }
+
+    &__title {
+        font-size: inherit;
+        line-height: inherit;
+        font-weight: 400;
+        padding: 30px 35px;
+        padding-left: 0;
+        cursor: pointer;
+
+        &--icon {
+            position: relative;
+            padding-left: 35px;
+            color: $mark-primary;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 28px;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 1px solid $mark-primary;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.24264 0.742711L5 4.98535L0.75736 0.742711' stroke='%23D34500' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");        
+            }
+
+            &.active {
+                &::before {
+                    background-color: $mark-primary;
+                    background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.24264 5.25735L5 1.01471L0.75736 5.25735' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");            }
+            }
+        }
+
+        &:hover, &.active {
+            color: $mark-primary;
+        }
+    }
+
+    &__content {
+        position: relative;
+        display: none;
+        padding: 0 35px 30px;
+        padding-left: 0;
+
+        &::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        &--icon {
+            padding-left: 35px;
+        }
+    }
+
+    &__icon {
+        width: 80px;
+        float: left;
+    }
+
+    &__filename {
+        text-indent: 5px;
+        font-weight: bold;
+        color: #cc4b4c;
+    }
+
+    &__filesize {
+        text-indent: 5px;
+    }
+}

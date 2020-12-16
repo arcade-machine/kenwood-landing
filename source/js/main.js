@@ -16,3 +16,10 @@ $('.toward-view__characteristics-close').each(function() {
         $(this).closest('.toward-view__characteristics--visible').removeClass('toward-view__characteristics--visible');
     });
 });
+
+$('.faq__title').each(function() {
+    $(this).on('click', function() {
+        $(this).toggleClass('active');
+        $(this).next().slideToggle();
+    });
+});
