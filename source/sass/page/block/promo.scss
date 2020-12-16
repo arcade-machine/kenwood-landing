@@ -11,6 +11,10 @@
     min-height: 800px;
   }
 
+  @media (max-width: 768px) {
+    min-height: 535px;
+  }
+
   &__container {
     display: flex;
     align-items: flex-start;
@@ -26,6 +30,10 @@
       max-width: none;
       width: 100%;
     }
+
+    @media (max-width: 768px) {
+      padding: 45px 30px 84px;
+    }
   }
 
   &__wrapper {
@@ -38,15 +46,18 @@
   }
 
   &__title {
+    max-width: 264px;
     margin-bottom: 15px;
     font-family: "Montserrat", sans-serif;
-    font-size: 30px;
+    font-size: 16px;
+    line-height: 20px;
     letter-spacing: 0.015em;
     font-weight: 700;
     color: #231F20;
     text-transform: uppercase;
 
     @media (min-width: 1024px) {
+      max-width: 500px;
       font-size: 36px;
       line-height: 44px;
       letter-spacing: 0.015em;
@@ -55,7 +66,8 @@
 
   &__subtitle {
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 16px;
+    line-height: 20px;
     font-family: Merriweather;
     font-style: italic;
     font-weight: normal;
@@ -117,13 +129,16 @@
     font-family: Merriweather;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 24px;
+    line-height: 30px;
     text-transform: uppercase;
     color: #D34500;
+    width: 49%;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 768px) {
       width: 60%;
+      font-size: 40px;
+      line-height: 50px;
     }
   }
 
@@ -132,14 +147,14 @@
     align-items: flex-end;
     justify-content: space-between;
 
-    @media (max-width: 1200px) {
-      flex-direction: column;
-      align-items: flex-start;
+    @media (max-width: 768px) {
+      flex-direction: row;
+      align-items: center;
     }
   }
 
   &__link {
-    width: 100%;
+    width: 49%;
     display: flex;
     justify-content: center;
     align-items: center;

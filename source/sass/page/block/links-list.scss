@@ -1,8 +1,8 @@
 .links-list {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     list-style: none;
+    overflow-x: auto;
 
     &--bordered {
         border-top: 1px solid $divider;
@@ -23,6 +23,7 @@
         line-height: 1.2;
         color: #000;
         text-decoration: none;
+        white-space: nowrap;
 
         &:not(.links-list__link--active) {
             &:hover {

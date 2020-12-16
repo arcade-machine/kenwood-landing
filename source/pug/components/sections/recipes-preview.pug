@@ -9,3 +9,13 @@ mixin recipes-preview()
                     +nozzle-preview('recipes-preview__item', img + 'nozzle-preview-1.jpg', 'Насадка из высококачественной нержавеющей стали Kenwood AT971A предназначена для приготовления в домашних условиях пасты тальятелле')
                     +nozzle-preview('recipes-preview__item', img + 'nozzle-preview-2.jpg', 'Насадка из высококачественной нержавеющей стали Kenwood AT971A предназначена для приготовления в домашних условиях пасты тальятелле')
                     +nozzle-preview('recipes-preview__item', img + 'nozzle-preview-3.jpg', 'Насадка из высококачественной нержавеющей стали Kenwood AT971A предназначена для приготовления в домашних условиях пасты тальятелле')
+        .container    
+            .recipes-preview__recipes
+                h2.section-title Рецепты с Kenwood:
+                ul.recipes-preview__list
+                    li.recipes-preview__recipe
+                        +recipe-card('Брускетты с песто и семгой', img + 'recipe-1.jpg', '17 мая 2000', '1365', '0', '4')
+                    li.recipes-preview__recipe  
+                        +recipe-card('Пряная курица с ананасами', img + 'recipe-2.jpg', '21 января 2000', '1491', '0', '0')
+                    li.recipes-preview__recipe
+                        +recipe-card('Оливье с телятиной и домашним майонезом', img + 'recipe-3.jpg', '18 января 2000', '1183', '0', '0')

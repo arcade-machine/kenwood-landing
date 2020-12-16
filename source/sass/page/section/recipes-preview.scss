@@ -47,4 +47,33 @@
             }
         }
     }
+
+    &__recipes {
+        margin-top: 70px;
+    }
+
+    &__list {
+        display: grid;
+        grid-gap: 45px 15px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin: 45px 0 0;
+        padding: 0;
+        list-style: none;
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (min-width: 1024px) {
+            grid-gap: 45px 75px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    &__recipe {
+        width: 100%;
+        max-width: 330px;
+    }
+
 }

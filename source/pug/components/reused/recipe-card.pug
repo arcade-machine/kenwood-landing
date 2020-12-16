@@ -1,0 +1,13 @@
+mixin recipe-card(name, url, date, seen, comments, likes)
+    article.recipe-card
+        a.recipe-card__image-holder(href="#")
+            img.recipe-card__img(src= url, alt="")
+        .recipe-card__info
+            .recipe-card__group Рецепты
+            h3.recipe-card__name= name
+            .recipe-card__company kenwood
+            .recipe-card__date= date
+        .recipe-card__counters
+            .recipe-card__count.recipe-card__count--seen= seen
+            .recipe-card__count.recipe-card__count--comments= comments
+            .recipe-card__count.recipe-card__count--likes= likes

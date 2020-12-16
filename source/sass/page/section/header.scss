@@ -44,6 +44,11 @@
 
   &__logo {
     display: block;
+
+    @media (max-width: 768px) {
+      max-width: 160px;
+      margin-left: 10px;
+    }
   }
 
   &__phone-box {
@@ -74,6 +79,10 @@
     line-height: 27px;
     color: #231F20;
     text-decoration: none;
+
+    @media (max-width: 768px) {
+      font-size: 21px;
+    }
   }
 
   &__actions {

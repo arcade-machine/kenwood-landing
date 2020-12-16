@@ -1,26 +1,27 @@
 .top {
-  min-height: 1097px;
+  min-height: 496px;
   background-color: #f7f7f7;
   background-image: url("../img/top-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 25% top;
   display: flex;
 
   @media (min-width: 1024px) {
+    min-height: 1097px;
     padding-bottom: 46px;
     border-bottom: 1px solid #e0e3e5;
+    background-position: top;
   }
 
   &__container {
     display: flex;
     align-items: flex-start;
-    padding: 0;
+    padding: 0 10px;
 
     @media (max-width: 1024px) {
-      align-items: center;
-      justify-content: center;
       height: auto;
+      padding: 0;
     }
   }
 
@@ -29,8 +30,8 @@
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.8) 22.92%, #FFFFFF 99.48%);
 
     @media (max-width: 1024px) {
-      width: 100%;
-      background: linear-gradient(0deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.8) 25.48%, #FFFFFF 30%, #FFFFFF 85%, rgba(255, 255, 255, 0.03) 100%);
+      margin-left: 40px;
+      padding: 40px 15px 75px 25px;
     }
   }
 
@@ -47,11 +48,12 @@
 
   &__subtitle {
     margin-bottom: 10px;
-    font-size: 34px;
+    font-size: 24px;
     font-weight: 400;
     font-style: italic;
 
     &--red {
+      font-size: 30px;
       font-style: normal;
 
       @media (min-width: 768px) {
@@ -69,7 +71,7 @@
   }
 
   &__text {
-    font-size: 28px;
+    font-size: 18px;
     font-style: italic;
 
     &--top {
