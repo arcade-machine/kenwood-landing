@@ -42,5 +42,15 @@ if (window.matchMedia("(min-width: 1025px)").matches && document.querySelector('
         animationObserver.observe(element);
     });
 } else {
-
+    $('.cooking__btn').each(function() {
+        $(this).on('click', function() {
+            const currentIndex = $(this).parent().attr('data-line');
+            const previousIndex = $('.cooking__btn.active').parent().attr('data-line');
+            $('.cooking__item[data-line=' + previousIndex + ']').slideUp();
+            $('.cooking__btn.active').removeClass('active'); 
+            $(this).addClass('active');
+            $('.cooking__item[data-line=' + currentIndex + ']').slideDown();
+        });
+    });
+    $('.cooking__btn').click();
 }

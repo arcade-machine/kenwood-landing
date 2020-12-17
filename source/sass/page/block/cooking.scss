@@ -1,3 +1,13 @@
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
 .cooking {
     &__container {
         max-width: 1055px;
@@ -24,14 +34,28 @@
         position: absolute;
         top: 67px;
         right: 215px;
+
+        @media (max-width: 1024px) {
+            position: relative;
+            top: auto;
+            right: auto;
+            width: fit-content;
+            margin: 0 auto;
+        }
     }
 
     &__line {
         z-index: 1;
         position: absolute;
 
-        & svg path {
-            transition: stroke-dashoffset 2s ease;
+        & svg {
+            @media (max-width: 1024px) {
+                display: none;
+            }
+
+            & path {
+                transition: stroke-dashoffset 2s ease;
+            }
         }
 
         &--top {
@@ -46,19 +70,33 @@
         &--middle  {
             top: 80px;
             right: 335px;
+
+            @media (max-width: 1024px) {
+                top: 0;
+            }
             & .cooking__btn {
                 top: -23px;
                 right: -22px;
+                @media (max-width: 1024px) {
+                    top: 50px;
+                }
             }
         }
     
         &--bottom { 
             bottom: -10px;
             left: 110px;
+
+            @media (max-width: 1024px) {
+                bottom: 0;
+            }
     
             & .cooking__btn {
                 top: -25px;
                 left: -21px;
+                @media (max-width: 1024px) {
+                    top: -118px;
+                }
             }
         }
     }
@@ -72,6 +110,13 @@
         border: none;
         border-radius: 50%;
         background-color: #C4C4C4;
+        outline: none;
+
+        @media (max-width: 1024px) {
+            &:not(.active) {
+                animation: pulse 1s ease infinite alternate-reverse;
+            }
+        }
     }
 
     &__list {
@@ -99,6 +144,11 @@
         &:not(.cooking__item--actions) {
             opacity: 0;
             transition: opacity 1s ease;
+
+            @media (max-width: 1024px) {
+                opacity: 1;
+                transition: none;
+            }
         }
 
         &.animated {
