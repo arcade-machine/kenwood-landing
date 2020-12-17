@@ -16,18 +16,72 @@
         color: #000000;
     }
 
+    &__scheme {
+        position: relative;
+    }
+
+    &__figure {
+        position: absolute;
+        top: 67px;
+        right: 215px;
+    }
+
+    &__line {
+        z-index: 1;
+        position: absolute;
+
+        & svg path {
+            transition: stroke-dashoffset 2s ease;
+        }
+
+        &--top {
+            top: 0;
+            right: 25px;
+            & .cooking__btn {
+                top: 50px;
+                right: 23px;
+            }
+        }
+    
+        &--middle  {
+            top: 80px;
+            right: 335px;
+            & .cooking__btn {
+                top: -23px;
+                right: -22px;
+            }
+        }
+    
+        &--bottom { 
+            bottom: -10px;
+            left: 110px;
+    
+            & .cooking__btn {
+                top: -25px;
+                left: -21px;
+            }
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        z-index: -1;
+        width: 45px;
+        height: 45px;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        background-color: #C4C4C4;
+    }
+
     &__list {
         position: relative;
         display: flex;
         flex-direction: column;
-        min-height: 760px;
+        min-height: 730px;
         padding: 0;
         margin: 0;
         list-style: none;
-        background-image: url("../img/cooking.png");
-        background-size: 100% auto;
-        background-position: 0 67px;
-        background-repeat: no-repeat;
 
         @media (max-width: 1024px) {
             background-image: none;
@@ -41,6 +95,15 @@
         font-size: 18px;
         line-height: 22px;
         color: #000000;
+
+        &:not(.cooking__item--actions) {
+            opacity: 0;
+            transition: opacity 1s ease;
+        }
+
+        &.animated {
+            opacity: 1;
+        }
 
         &--actions {
             position: absolute;
@@ -57,7 +120,7 @@
         &:nth-child(1) {
             width: 700px;
             margin-left: auto;
-            margin-bottom: 208px;
+            margin-bottom: 185px;
 
             @media (max-width: 1024px) {
                 width: 100%;

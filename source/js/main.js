@@ -23,3 +23,24 @@ $('.faq__title').each(function() {
         $(this).next().slideToggle();
     });
 });
+
+if (window.matchMedia("(min-width: 1025px)").matches && document.querySelector('.cooking__item[data-line]')) {
+    const animationObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.intersectionRatio > 0) {
+                const lineBlock = document.querySelectorAll('.cooking__line')[entry.target.dataset.line];
+                const svg = lineBlock.querySelector('svg path');
+                lineBlock.classList.add('animated');
+                entry.target.classList.add('animated');
+                svg.setAttribute('stroke-dashoffset', 0);
+                animationObserver.unobserve(entry.target);
+            }
+        });
+    }, {threshold: 1});
+
+    document.querySelectorAll('.cooking__item[data-line]').forEach(function (element) {
+        animationObserver.observe(element);
+    });
+} else {
+
+}

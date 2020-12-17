@@ -5,11 +5,26 @@ mixin cooking()
         .cooking__container.container
             h2.cooking__title
                 | Каждая машина Kenwood Chef открывает целый мир возможностей приготовления пищи
-            ul.cooking__list
-                each item in listItems
-                    li.cooking__item!= item
-                li.cooking__item.cooking__item--actions
-                    p.cooking__text
-                        | Вы можете купить машину Kenwood Chef, которая вам подходит, а затем персонализировать ее под себя с помощью более чем 25 доступных насадок.
-                    a.cooking__link(href="#")
-                        | Посмотреть все насадки
+            .cooking__scheme
+                .cooking__figure
+                    .cooking__line.cooking__line--top(data-line="0")
+                        button.cooking__btn(type="button")
+                        svg(width="461" height="74" viewBox="0 0 461 74" fill="none")
+                            path(d="M0 1H460L405 93.5" stroke="black" stroke-dashoffset="567.6162109375" stroke-dasharray="567.6162109375")
+                    .cooking__line.cooking__line--middle(data-line="1")
+                        button.cooking__btn(type="button")
+                        svg(width="483" height="61" viewBox="0 0 483 61" fill="none")
+                            path(d="M482 1L425 60H0" stroke="black" stroke-dashoffset="507.03656005859375" stroke-dasharray="507.03656005859375")
+                    .cooking__line.cooking__line--bottom(data-line="2")
+                        button.cooking__btn(type="button")
+                        svg(width="516" height="98" viewBox="0 0 516 98" fill="none")
+                            path(d="M1 1L35 97H516" stroke="black" stroke-dashoffset="582.843017578125" stroke-dasharray="582.843017578125")
+                    img.cooking__img(src=img + "nozzle-scheme.jpg")
+                ul.cooking__list
+                    each item, index in listItems
+                        li.cooking__item(data-line= index)!= item
+                    li.cooking__item.cooking__item--actions
+                        p.cooking__text
+                            | Вы можете купить машину Kenwood Chef, которая вам подходит, а затем персонализировать ее под себя с помощью более чем 25 доступных насадок.
+                        a.cooking__link(href="#")
+                            | Посмотреть все насадки
