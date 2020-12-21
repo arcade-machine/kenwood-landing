@@ -54,3 +54,42 @@ if (window.matchMedia("(min-width: 1025px)").matches && document.querySelector('
     });
     $('.cooking__btn').click();
 }
+
+const nozzlesInfoContainer = document.querySelectorAll('.nozzles-list__container');
+
+if (nozzlesInfoContainer.length) {
+    nozzlesInfoContainer.forEach(
+        (container) => {
+            const nozzlesListInfo = document.querySelectorAll('.nozzles-list__info');
+            const currentNozzlesListInfo = container.querySelector('.nozzles-list__info');
+            const nozzlesList = container.querySelector('.nozzles-list__items');
+            const nozzlesItem = nozzlesList.querySelectorAll('.nozzles-list__item');
+            const nozzlesInfo = container.querySelectorAll('.nozzles-info');
+            let activeItemIndex;
+    
+            nozzlesItem.forEach(
+                (item, index) => {
+                    item.addEventListener('click', () => {
+                        activeItemIndex = index;
+    
+                        nozzlesInfo.forEach(
+                            (nozzle) => {
+                                nozzle.classList.remove('nozzles-info--active');
+                            }
+                        )
+    
+                        nozzlesListInfo.forEach(
+                            (info) => {
+                                info.classList.remove('nozzles-list__info--active');
+                            }
+                        )
+    
+                        currentNozzlesListInfo.classList.add('nozzles-list__info--active');
+                        nozzlesInfo[activeItemIndex].classList.add('nozzles-info--active');
+                        container.scrollIntoView();
+                    })
+                }
+            )
+        }
+    )
+}

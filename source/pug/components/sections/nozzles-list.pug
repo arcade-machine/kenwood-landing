@@ -3,24 +3,43 @@ mixin nozzles-list()
     .content-section.nozzles-list
         .container
             +links-list(['Все', 'Высокоскоростные', 'Низкоскоростные', 'Для пасты'], 'links-list--bordered')
-            ul.nozzles-list__items
-                li.nozzles-list__item
-                    +nozzle-card(img + "nozzle-heading-1.jpg", "Насадка Kenwood AT971A", 'nozzles-list__card')
-                li.nozzles-list__item    
-                    +nozzle-card(img + "nozzle-heading-2.jpg", "Насадка термостойкий стеклянный блендер Kenwood KAH359GL", 'nozzles-list__card')
-                li.nozzles-list__item    
-                    +nozzle-card(img + "nozzle-heading-5.jpg", "Насадка Kenwood AT971A", 'nozzles-list__card')
-                li.nozzles-list__item    
-                    +nozzle-card(img + "nozzle-heading-6.jpg", "Насадка Kenwood AT971A", 'nozzles-list__card')
-                li.nozzles-list__item    
-                    +nozzle-card(img + "nozzle-heading-7.jpg", "Насадка Kenwood AT971A", 'nozzles-list__card')
-                li.nozzles-list__item    
-                    +nozzle-card(img + "nozzle-heading-3.jpg", "Насадка Kenwood AT971A", 'nozzles-list__card')
-                li.nozzles-list__item    
-                    +nozzle-card(img + "nozzle-heading-8.jpg", "Насадка Универсальный мультиизмельчитель AT320A", 'nozzles-list__card')
-                li.nozzles-list__item    
-                    +nozzle-card(img + "nozzle-heading-4.jpg", "Насадка Kenwood AT971A", 'nozzles-list__card')
-                li.nozzles-list__item    
-                    +nozzle-card(img + "nozzle-heading-4.jpg", "Насадка Kenwood AT971A", 'nozzles-list__card')
-                li.nozzles-list__item    
-                    +nozzle-card(img + "nozzle-heading-4.jpg", "Насадка Kenwood AT971A", 'nozzles-list__card')
+            .nozzles-list__container
+                ul.nozzles-list__items
+                    li.nozzles-list__item
+                        +nozzle-card(img + "nozzle-heading-1.jpg", "Насадка Kenwood AT971A", 'nozzles-list__card')
+                    li.nozzles-list__item    
+                        +nozzle-card(img + "nozzle-heading-2.jpg", "Насадка термостойкий стеклянный блендер Kenwood KAH359GL", 'nozzles-list__card')
+                    li.nozzles-list__item    
+                        +nozzle-card(img + "nozzle-heading-5.jpg", "Насадка Kenwood AT971A", 'nozzles-list__card')
+                    li.nozzles-list__item    
+                        +nozzle-card(img + "nozzle-heading-6.jpg", "Насадка Kenwood AT971A", 'nozzles-list__card')
+                .nozzles-list__info
+                    +nozzles-info("Насадка Kenwood AT971A")
+                    +nozzles-info("Насадка термостойкий стеклянный блендер Kenwood KAH359GL")
+                    +nozzles-info("Насадка Kenwood AT971A")
+                    +nozzles-info("Насадка Kenwood AT971A")        
+            .nozzles-list__container
+                ul.nozzles-list__items        
+                    li.nozzles-list__item    
+                        +nozzle-card(img + "nozzle-heading-7.jpg", "Насадка Kenwood AT971A", 'nozzles-list__card')
+                    li.nozzles-list__item    
+                        +nozzle-card(img + "nozzle-heading-3.jpg", "Насадка Kenwood AT971A", 'nozzles-list__card')
+                    li.nozzles-list__item    
+                        +nozzle-card(img + "nozzle-heading-8.jpg", "Насадка Универсальный мультиизмельчитель AT320A", 'nozzles-list__card')
+                    li.nozzles-list__item    
+                        +nozzle-card(img + "nozzle-heading-4.jpg", "Насадка Kenwood AT971A", 'nozzles-list__card')
+                .nozzles-list__info
+                    +nozzles-info("Насадка Kenwood AT971A")
+                    +nozzles-info("Насадка Kenwood AT971A")
+                    +nozzles-info("Насадка Универсальный мультиизмельчитель AT320A")
+                    +nozzles-info("Насадка Kenwood AT971A")        
+            .nozzles-list__container            
+                ul.nozzles-list__items        
+                    li.nozzles-list__item    
+                        +nozzle-card(img + "nozzle-heading-4.jpg", "Насадка Kenwood AT971A", 'nozzles-list__card')
+                    li.nozzles-list__item    
+                        +nozzle-card(img + "nozzle-heading-4.jpg", "Насадка Kenwood AT971A", 'nozzles-list__card')
+                .nozzles-list__info
+                    +nozzles-info("Насадка Kenwood AT971A")
+                    +nozzles-info("Насадка Kenwood AT971A")
+                

@@ -17,6 +17,11 @@
         font-size: 40px;
     }
 
+    &__actions {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__text {
         max-width: 630px;
         margin-top: 30px;
