@@ -28,6 +28,10 @@
         @media (min-width: 1024px) {
             max-width: unset;
         }
+
+        &--active {
+            color: #d34500;
+        }
     }
 
     &__card {

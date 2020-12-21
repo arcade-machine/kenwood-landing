@@ -70,11 +70,35 @@ if (nozzlesInfoContainer.length) {
             nozzlesItem.forEach(
                 (item, index) => {
                     item.addEventListener('click', () => {
+                        if (activeItemIndex === index) {
+                            nozzlesInfo.forEach(
+                                (nozzle) => {
+                                    nozzle.classList.remove('nozzles-info--active');
+                                }
+                            )
+
+                            document.querySelectorAll('.nozzles-list__item').forEach(
+                                (nozzleItem) => {
+                                    nozzleItem.classList.remove('nozzles-list__item--active');
+                                }
+                            )
+
+                            activeItemIndex = '';
+
+                            return;
+                        }
+
                         activeItemIndex = index;
     
                         nozzlesInfo.forEach(
                             (nozzle) => {
                                 nozzle.classList.remove('nozzles-info--active');
+                            }
+                        )
+
+                        document.querySelectorAll('.nozzles-list__item').forEach(
+                            (nozzleItem) => {
+                                nozzleItem.classList.remove('nozzles-list__item--active');
                             }
                         )
     
@@ -86,7 +110,8 @@ if (nozzlesInfoContainer.length) {
     
                         currentNozzlesListInfo.classList.add('nozzles-list__info--active');
                         nozzlesInfo[activeItemIndex].classList.add('nozzles-info--active');
-                        container.scrollIntoView();
+                        item.classList.add('nozzles-list__item--active');
+                        nozzlesInfo[activeItemIndex].scrollIntoView();
                     })
                 }
             )
