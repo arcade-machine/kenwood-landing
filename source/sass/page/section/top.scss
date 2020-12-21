@@ -51,6 +51,7 @@
     font-size: 24px;
     font-weight: 400;
     font-style: italic;
+    text-transform: uppercase;
 
     &--red {
       font-size: 30px;
@@ -59,7 +60,6 @@
       @media (min-width: 768px) {
         font-size: 42px;
         line-height: 53px;
-        text-transform: uppercase;
       }
     }
 
